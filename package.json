@@ -5,8 +5,8 @@
   "homepage": "https://chenmarko77.github.io/Event_booster/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Event_booster/",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build src/index.html --dist-dir dist",
+    "deploy": "npm run build"
   },
   "repository": {
     "type": "git",
