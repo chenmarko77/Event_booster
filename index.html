@@ -2,10 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <h1>Ticketmaster Events</h1>
+    <!-- <ul id="events"></ul> -->
+
+
+    <script id="film-template" type="text/x-handlebars-template">
+        {{#each items}}
+        <div class="film">
+        <img class="photo" src="{{url}}" alt="">
+        <h2 class="name">{{name}}</h2>
+        <p class="date">{{date}}</p>
+        <p class="position">{{position}}</p>
+        </div>
+        {{/each}}
+    </script>
+
+  <div id="film-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
