@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  width: 1280px;
+  margin: 0 auto;
+}
+.header {
+  background-image: url(../img/band.png);
+  background-color: #0b0b0b80;
+  height: 446px;
+  &__logo {
+    position: absolute;
+  }
+  &__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__main-title {
+      width: 600px;
+      height: 122px;
+      margin-top: 40px;
+      font-family: "Montserrat";
+      font-weight: 900;
+      font-size: 50px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: #dc56c5;
+    }
+  }
+}
