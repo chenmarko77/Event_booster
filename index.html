@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Buster</title>
-</head>
-<body>
-      <div class="container">
-        <header class="header">
-            <div class="logo">
-                <p>Event Buster</p>
-            </div>
-        
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="./img/logo.svg" alt="" />
+      <section class="header__hero">
+        <h1 class="header__hero__main-title">
+          FIND BEST EVENTS AROUND THE WORLD
+        </h1>
+        <div class="header__hero__filters">
+          <input
+            type="search"
+            placeholder="Start searching"
+            class="header__hero__filters__search-input"
+          />
+          <select class="header__hero__filters__filter-select">
+            <option>Choose category</option>
+            <option>Music</option>
+            <option>Festival</option>
+          </select>
+          <input type="date" class="header__hero__filters__filter-date" />
+        </div>
+        <div class="header__hero__banner"></div>
+      </section>
+    </header>
 
+    <main class="main">
+      <script id="film-template" type="text/x-handlebars-template">
+        {{#each items}}
+          <div class="film">
+            <img class="photo" src="{{url}}" alt="" />
+            <h2 class="name">{{name}}</h2>
+            <p class="date">{{date}}</p>
+            <p class="position">{{position}}</p>
+          </div>
+        {{/each}}
+      </script>
 
-        <section class="hero">
-            <h1 class="main-title">FIND BEST EVENTS AROUND THE WORLD</h1>
-            <div class="filters">
-                <input type="search" placeholder="Search event..." class="search-input">
-                <select class="filter-select">
-                    <option>Choose category</option>
-                    <option>Music</option>
-                    <option>Festival</option>
-                </select>
-                <input type="date" class="filter-date">
-            </div>
-            <div class="banner">
-            </div>
-        </section>
+      <div id="film-container" class="film-container"></div>
 
-</header>
+      <div id="main__pagination" class="main__pagination">
+        <button class="main__pagination__page-btn">1</button>
+      </div>
 
-<main>
-
-       <div id="film-container"></div>  
-        
-       <div id="btn-pagin" class="btn-pagin">
-        <button id="btn-pagin" class="btn-pagin">1</button>
-       </div>
+      <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+      <script src="./script.js"></script>
     </main>
-    
 
-<footer>
-© 2021 | All Rights Reserved | Developed with ♥ by GoIT Students
-</footer>
-
-    <script src="script.js"></script>
-</body>
+    <footer>
+      <p>© 2025 Event Buster | All Rights Reserved</p>
+    </footer>
+  </body>
 </html>
