@@ -10,9 +10,11 @@
   </head>
   <body>
     <header class="header">
-        <img class="header__logo" src="./img/logo.svg" alt="">
+      <img class="header__logo" src="./img/logo.svg" alt="" />
       <section class="header__hero">
-        <h1 class="header__hero__main-title">FIND BEST EVENTS AROUND THE WORLD</h1>
+        <h1 class="header__hero__main-title">
+          FIND BEST EVENTS AROUND THE WORLD
+        </h1>
         <div class="header__hero__filters">
           <input
             type="search"
@@ -36,6 +38,22 @@
       <div id="main__pagination" class="main__pagination">
         <button class="main__pagination__page-btn">1</button>
       </div>
+
+      <script id="film-template" type="text/x-handlebars-template">
+        {{#each items}}
+          <div class="film">
+            <img class="photo" src="{{url}}" alt="" />
+            <h2 class="name">{{name}}</h2>
+            <p class="date">{{date}}</p>
+            <p class="position">{{position}}</p>
+          </div>
+        {{/each}}
+      </script>
+
+      <div id="film-container"></div>
+
+      <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+      <script src="./script.js"></script>
     </main>
 
     <footer>
