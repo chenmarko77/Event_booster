@@ -25,24 +25,50 @@ body {
       letter-spacing: 0%;
       text-align: center;
       color: #dc56c5;
+      margin-bottom: 52px;
+    }
+    &__filters {
+      &__search-input {
+        width: 270px;
+        height: 40px;
+        background: #ffffff33;
+        backdrop-filter: blur(20px);
+        border-radius: 30px;
+        border: none;
+        color: white;
+      }
+        &__filter-select {
+        width: 270px;
+        height: 40px;
+        background: #ffffff33;
+        backdrop-filter: blur(20px);
+        border-radius: 30px;
+        border: none;
+        color: #939393;
+      }
+        &__filter-date {
+        width: 270px;
+        height: 40px;
+        background: #ffffff33;
+        backdrop-filter: blur(20px);
+        border-radius: 30px;
+        border: none;
+        color: #939393;
+      }
     }
   }
 }
 
-
-.film{
+.film {
   width: 194px;
   height: 312px;
-  &-container{
+  &-container {
     width: 100%;
-
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
   }
 }
-.photo{
+.photo {
   width: 180px;
   height: 227px;
 }

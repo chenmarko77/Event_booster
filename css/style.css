@@ -28,6 +28,37 @@ body {
   letter-spacing: 0%;
   text-align: center;
   color: #dc56c5;
+  margin-bottom: 52px;
+}
+.header__hero__filters__search-input {
+  width: 270px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 30px;
+  border: none;
+  color: white;
+}
+.header__hero__filters__filter-select {
+  width: 270px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 30px;
+  border: none;
+  color: #939393;
+}
+.header__hero__filters__filter-date {
+  width: 270px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 30px;
+  border: none;
+  color: #939393;
 }
 
 .film {
@@ -38,7 +69,6 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .photo {

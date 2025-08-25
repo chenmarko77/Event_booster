@@ -33,12 +33,6 @@
     </header>
 
     <main class="main">
-      <div id="main__film-container"></div>
-
-      <div id="main__pagination" class="main__pagination">
-        <button class="main__pagination__page-btn">1</button>
-      </div>
-
       <script id="film-template" type="text/x-handlebars-template">
         {{#each items}}
           <div class="film">
@@ -50,7 +44,11 @@
         {{/each}}
       </script>
 
-      <div id="film-container"></div>
+      <div id="film-container" class="film-container"></div>
+
+      <div id="main__pagination" class="main__pagination">
+        <button class="main__pagination__page-btn">1</button>
+      </div>
 
       <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
       <script src="./script.js"></script>
