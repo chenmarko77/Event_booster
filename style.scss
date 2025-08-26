@@ -71,4 +71,12 @@ body {
 .photo {
   width: 180px;
   height: 227px;
+  object-fit: cover;
+}
+
+.main {
+  max-width: 946px;
+  max-height: 1760px;
+  background: solid black;
+  // background: url("./img/bg_body.png") no-repeat center/cover
 }
