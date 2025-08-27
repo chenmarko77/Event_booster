@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(../img/band.png);
+  background-color: rgba(11, 11, 11, 0.5019607843);
+  height: 446px;
+}
+.header__logo {
+  position: absolute;
+}
+.header__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header__hero__main-title {
+  width: 600px;
+  height: 122px;
+  margin-top: 40px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #dc56c5;
+  margin-bottom: 52px;
+}
+.header__hero__filters__search-input {
+  width: 270px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 30px;
+  border: none;
+  color: white;
+}
+.header__hero__filters__filter-select {
+  width: 270px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 30px;
+  border: none;
+  color: #939393;
+}
+.header__hero__filters__filter-date {
+  width: 270px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 30px;
+  border: none;
+  color: #939393;
+}
+
+.film {
+  width: 194px;
+  height: 312px;
+  row-gap: 50px;
+}
+.film-container {
+  max-width: 946px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo {
+  width: 180px;
+  height: 227px;
+    border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+     object-fit: cover;
+}
+
+.main {
+  max-width: 1888x;
+  max-height: 2106px;
+  margin: 0 auto;
+  background: url(../img/bg_body.png) no-repeat center/cover;
+}
+
+.name {
+font-weight: 700;
+font-size: 16px;
+text-align: center;
+color: #DC56C5;
+}
+
+.date{
+font-weight: 200;
+font-size: 16px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.position{
+font-weight: 600;
+font-size: 14px;
+text-align: center;
+color: #FFFFFF;
+}
