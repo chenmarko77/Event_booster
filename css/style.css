@@ -77,9 +77,10 @@ body {
 .photo {
   width: 180px;
   height: 227px;
-    border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  -o-object-fit: cover;
      object-fit: cover;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .main {
@@ -90,22 +91,22 @@ body {
 }
 
 .name {
-font-weight: 700;
-font-size: 16px;
-text-align: center;
-color: #DC56C5;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #DC56C5;
 }
 
-.date{
-font-weight: 200;
-font-size: 16px;
-text-align: center;
-color: #FFFFFF;
+.date {
+  font-weight: 200;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
-.position{
-font-weight: 600;
-font-size: 14px;
-text-align: center;
-color: #FFFFFF;
+.position {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
 }

@@ -62,21 +62,47 @@ body {
 .film {
   width: 194px;
   height: 312px;
+  row-gap: 50px;
   &-container {
-    width: 100%;
+    max-width: 946px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .photo {
   width: 180px;
   height: 227px;
   object-fit: cover;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .main {
-  max-width: 946px;
-  max-height: 1760px;
-  background: solid black;
-  // background: url("./img/bg_body.png") no-repeat center/cover
+  max-width: 1888x;
+  max-height: 2106px;
+  margin: 0 auto;
+  background: url(../img/bg_body.png) no-repeat center/cover;
+}
+
+.name {
+font-weight: 700;
+font-size: 16px;
+text-align: center;
+color: #DC56C5;
+}
+
+.date{
+font-weight: 200;
+font-size: 16px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.position{
+font-weight: 600;
+font-size: 14px;
+text-align: center;
+color: #FFFFFF;
 }

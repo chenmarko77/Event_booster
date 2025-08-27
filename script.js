@@ -40,3 +40,23 @@ fetch(url)
     }
  })
 .catch(error => console.error("Помилка запиту:", error));
+
+////////////////////////////////////////////////////////////////////
+
+const searchInput = document.querySelector('.header__hero__filters__search-input');
+
+searchInput.addEventListener('input', function () {
+  const filter = this.value.toLowerCase();
+  const cards = document.querySelectorAll('.film'); // loop through the cards
+
+  cards.forEach(card => {
+    const name = card.querySelector('.name')?.textContent.toLowerCase() || "";
+    const position = card.querySelector('.position')?.textContent.toLowerCase() || "";
+
+    if (name.includes(filter) || position.includes(filter)) {
+      card.style.display = ""; // show
+    } else {
+      card.style.display = "none"; // hide
+    }
+  });
+});
