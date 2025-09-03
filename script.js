@@ -1,7 +1,7 @@
+let number = 0
 const apiKey = "AmAf8IczehTGLZEcHlAJrECstMGXhgv5";
-const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${apiKey}&countryCode=US&segmentId=KZFzniwnSyZfZ7v7nn&size=20&page=0`
 
-//////////////////////////////////////////////////////////////// виводить усі данні!!
+// ////////////////////////////////////////////////////////////// виводить усі данні!!
 
 // fetch(url)
 // .then(response => response.json())
@@ -17,8 +17,9 @@ const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${apiK
 //  })
 // .catch(error => console.error("Помилка запиту:", error));
 
-////////////////////////////////////////////////////////////////////
-
+// //////////////////////////////////////////////////////////////////
+function showCards(){
+    const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${apiKey}&countryCode=US&segmentId=KZFzniwnSyZfZ7v7nn&size=20&page=${number}`
 fetch(url)
 .then(response => response.json())
 .then(data => {
@@ -40,6 +41,27 @@ fetch(url)
     }
  })
 .catch(error => console.error("Помилка запиту:", error));
+}
+
+showCards()
+
+
+const btnBack = document.querySelector(".btn-back");
+const btnNext = document.querySelector(".btn-next");
+const text = document.querySelector(".text");
+
+btnNext.addEventListener("click", ()=> {
+    number++
+    text.textContent = number
+    showCards()
+})
+
+
+btnBack.addEventListener("click", ()=> {
+    number--
+    text.textContent = number
+    showCards()
+})
 
 ////////////////////////////////////////////////////////////////////
 
