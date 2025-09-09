@@ -7,33 +7,64 @@
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    />
   </head>
   <body>
     <header class="header">
       <img class="header__logo" src="./img/logo.svg" alt="" />
-      
 
-      <svg width="243" height="211" viewBox="0 0 243 211" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject x="-30" y="-30" width="303" height="271">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(15px);clip-path:url(#bgblur_0_1_28_clip_path);height:100%;width:100%"></div>
-  </foreignObject>
-  <path data-figma-bg-blur-radius="30" d="M5.26083e-06 211C31.9112 211 63.51 205.542 92.9921 194.939C122.474 184.335 149.262 168.793 171.827 149.2C194.392 129.606 212.291 106.346 224.503 80.7462C236.715 55.1465 243 27.7089 243 3.05176e-05L1.44839e-05 5.19316e-05L5.26083e-06 211Z" fill="url(#paint0_linear_1_28)" fill-opacity="0.03" />
-  <defs>
-    <clipPath id="bgblur_0_1_28_clip_path" transform="translate(30 30)">
-      <path d="M5.26083e-06 211C31.9112 211 63.51 205.542 92.9921 194.939C122.474 184.335 149.262 168.793 171.827 149.2C194.392 129.606 212.291 106.346 224.503 80.7462C236.715 55.1465 243 27.7089 243 3.05176e-05L1.44839e-05 5.19316e-05L5.26083e-06 211Z" />
-    </clipPath>
-    <linearGradient id="paint0_linear_1_28" x1="286.426" y1="-79.4258" x2="-62.5297" y2="307.738" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#C4C4C4" />
-      <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
-    </linearGradient>
-  </defs>
-</svg>
+      <svg
+        width="243"
+        height="211"
+        viewBox="0 0 243 211"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <foreignObject x="-30" y="-30" width="303" height="271">
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+            style="
+              backdrop-filter: blur(15px);
+              clip-path: url(#bgblur_0_1_28_clip_path);
+              height: 100%;
+              width: 100%;
+            "
+          ></div>
+        </foreignObject>
+        <path
+          data-figma-bg-blur-radius="30"
+          d="M5.26083e-06 211C31.9112 211 63.51 205.542 92.9921 194.939C122.474 184.335 149.262 168.793 171.827 149.2C194.392 129.606 212.291 106.346 224.503 80.7462C236.715 55.1465 243 27.7089 243 3.05176e-05L1.44839e-05 5.19316e-05L5.26083e-06 211Z"
+          fill="url(#paint0_linear_1_28)"
+          fill-opacity="0.03"
+        />
+        <defs>
+          <clipPath id="bgblur_0_1_28_clip_path" transform="translate(30 30)">
+            <path
+              d="M5.26083e-06 211C31.9112 211 63.51 205.542 92.9921 194.939C122.474 184.335 149.262 168.793 171.827 149.2C194.392 129.606 212.291 106.346 224.503 80.7462C236.715 55.1465 243 27.7089 243 3.05176e-05L1.44839e-05 5.19316e-05L5.26083e-06 211Z"
+            />
+          </clipPath>
+          <linearGradient
+            id="paint0_linear_1_28"
+            x1="286.426"
+            y1="-79.4258"
+            x2="-62.5297"
+            y2="307.738"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#C4C4C4" />
+            <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
       <section class="header__hero">
         <h1 class="header__hero__main-title">
           FIND BEST EVENTS AROUND THE WORLD
         </h1>
         <div class="header__hero__filters">
+          <!-- <img class="header__hero__filters__search-icon" src="/Event_booster/img/search icon.svg" alt=""> -->
           <input
             type="search"
             placeholder="Start searching"
@@ -50,26 +81,27 @@
       </section>
     </header>
     <main class="main">
-      
       <script id="film-template" type="text/x-handlebars-template">
         {{#each items}}
-        
+
           <div class="film">
-          <div class="film-bg"></div>
+            <div class="film-bg"></div>
             <img class="photo" src="{{url}}" alt="" />
             <h2 class="name">{{name}}</h2>
             <p class="date">{{date}}</p>
-            <p class="position"> <img src="/Event_booster/img/Vector.svg" alt=""> {{position}}</p>
+            <p class="position">
+              <img src="/Event_booster/img/Vector.svg" alt="" />
+              {{position}}</p>
           </div>
         {{/each}}
       </script>
       <div id="film-container" class="film-container"></div>
 
       <div class="box">
-    <button class="btn-back">back</button>
-  <p class="text">1</p>
-  <button class="btn-next">next</button>
-    </div>
+        <button class="btn-back">back</button>
+        <p class="text">1</p>
+        <button class="btn-next">next</button>
+      </div>
 
       <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
       <script src="./script.js"></script>

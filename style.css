@@ -6,7 +6,7 @@
 body {
   width: 100%;
   margin: 0 auto;
-  
+  background-color: #0E0E0E;
 }
 
 .header {
@@ -14,6 +14,8 @@ body {
   height: 670px;
   background-repeat: no-repeat;
   background-size: cover;
+  
+   margin-bottom: 20px;
 }
 
 
@@ -61,10 +63,14 @@ position: relative;
           backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.2);
   border: 0;
-  padding-left: 42px;
+  padding-left: 20px;
   font-weight: 440;
   font-size: 22px;
   color: #a6a6a6;
+  background-image: url(/Event_booster/img/search.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: right 11px center;
 }
 .header__hero__filters__filter-select {
   border-radius: 40px;
@@ -102,7 +108,7 @@ position: relative;
   height: 312px; */
   border-radius: 50px 0;
 width: 194px;
-    height: 312px;
+    height: 412px;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -128,7 +134,7 @@ width: 194px;
 
 .main {
   max-width: 1888x;
-   min-height: 2000px;
+   min-height: 2500px;
   margin: 0 auto;
   background: url(/Event_booster/img/bg_body.png) no-repeat center/cover;
 }
@@ -241,3 +247,14 @@ footer p {
  margin-left: 73px;
   margin-top: -27px;
 }
+
+/* .header__hero__filters__search-icon{
+ display: flex;
+position: absolute;
+  left: 10px;      
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; 
+  color: #aaa;
+ width: 20px;
+} */
