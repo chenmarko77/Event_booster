@@ -1,20 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); */
+ * {
+            font-family: 'Montserrat', sans-serif;
+        }
+
 body {
   width: 100%;
   margin: 0 auto;
+  
 }
 
 .header {
-  background-image: url(../img/pic.png);
+  background-image: url(/Event_booster/img/pic.png);
   height: 670px;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
 .header__logo {
   position: absolute;
-  width: 300px;
-  top: -40px;
-  left: -40px;
+  width: 250px;
+  top: 0px;
+  
+  left:   0px;
+  
 }
 .header__hero {
   display: flex;
@@ -25,14 +34,14 @@ body {
 .header__hero__main-title {
   width: 800px;
   height: 122px;
-  margin-top: 40px;
   font-family: "Montserrat";
   font-weight: 900;
-  font-size: 75px;
+  font-size: 68px;
   letter-spacing: 0%;
   text-align: center;
   color: #dc56c5;
-  margin-top: 50px;
+position: relative;
+  bottom: 181px;
 }
 .header__hero__filters {
   display: flex;
@@ -40,7 +49,9 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 120px;
+  position: relative;
+  bottom: 64px;
+ 
 }
 .header__hero__filters__search-input {
   border-radius: 40px;
@@ -86,9 +97,17 @@ body {
 }
 
 .film {
-  width: 194px;
-  height: 312px;
-  row-gap: 50px;
+ 
+  /* width: 194px;
+  height: 312px; */
+  border-radius: 50px 0;
+width: 194px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    margin: 0 auto 60px; 
 }
 .film-container {
   max-width: 946px;
@@ -109,16 +128,17 @@ body {
 
 .main {
   max-width: 1888x;
-  max-height: 2106px;
+   min-height: 2000px;
   margin: 0 auto;
-  background: url(../img/bg_body.png) no-repeat center/cover;
+  background: url(/Event_booster/img/bg_body.png) no-repeat center/cover;
 }
 
 .name {
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  color: #dc56c5;
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 16px;
+text-align: center;
+color: #dc56c5;
 }
 
 .date {
@@ -191,7 +211,7 @@ body {
 }
 
 footer {
-  background: url(../img/bg_body.png) no-repeat center/cover;
+  background: url(/Event_booster/img/bg_body.png) no-repeat center/cover;
 }
 footer p {
   font-weight: 400;
@@ -200,4 +220,16 @@ footer p {
   color: #939393;
   padding-top: 80px;
   padding-bottom: 30px;
+}
+
+.film-bg {
+  display: flex;
+  position: absolute;
+  opacity: 0.2;
+ width: 157px;
+  height: 152px;
+  border: 1px solid #DC56C5;
+  border-radius: 50px 0;
+ margin-left: 73px;
+  margin-top: -27px;
 }
