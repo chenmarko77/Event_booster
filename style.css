@@ -135,10 +135,14 @@ width: 194px;
 
 .name {
   font-family: var(--font-family);
-font-weight: 700;
-font-size: 16px;
-text-align: center;
-color: #dc56c5;
+
+display: flex;
+     font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #dc56c5;
+    line-height: 1.6;
+    margin: 10px 0;  
 }
 
 .date {
@@ -149,9 +153,13 @@ color: #dc56c5;
 }
 
 .position {
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
+ display: flex;
+     font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #dc56c5;
+    line-height: 1.6;
+    margin: 10px 0; 
   color: #ffffff;
 }
 
