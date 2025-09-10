@@ -250,3 +250,28 @@ document.addEventListener("click", (e) => {
   }
 });
 //////////////////////////////////////////////////////////////////// end
+
+
+
+const dateInput = document.querySelector('.header__hero__filters__filter-date');
+
+dateInput.addEventListener('change', function () {
+    const selectedDate = new Date(this.value); // перетворюємо на Date
+    const cards = document.querySelectorAll('.film');
+
+    cards.forEach(card => {
+        const cardDateText = card.querySelector('.date')?.textContent || "";
+        const cardDate = new Date(cardDateText); // перетворюємо на Date
+
+        // Порівнюємо тільки рік, місяць і день
+        const sameDate = cardDate.getFullYear() === selectedDate.getFullYear() &&
+                         cardDate.getMonth() === selectedDate.getMonth() &&
+                         cardDate.getDate() === selectedDate.getDate();
+
+        if (!this.value || sameDate) {
+            card.style.display = ""; // показати
+        } else {
+            card.style.display = "none"; // сховати
+        }
+    });
+});
